@@ -1,0 +1,151 @@
+body{
+margin: 0px;
+padding: 0px;
+display: grid;
+grid-template-columns: auto 1fr;
+min-width: 50vw;
+background-color: aliceblue;
+font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 20px;
+}
+p{
+    font-size: 14px;
+}
+h3{
+    font-size: 18px;
+}
+h4{
+    margin:0px;
+}
+.sidebar{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 100px 50px 50px 50px 50px 50px 50px;
+    /* height: 100vh; */
+    width: 20vw;
+    min-width: 200px;
+    background-color: aqua;
+    padding: 0px 10px 0px 20px;
+    row-gap: 0px;
+    column-gap: 5px;
+}
+h1, span{
+    align-self: center;
+}
+.flex{
+    display: flex;
+}
+header{
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px -2px gray;
+    padding:10px;
+}
+.header-top, .header-bottom{
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.btns{
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.user-profile, .search{
+    gap:10px;
+}
+.search input[type="text"]{
+    background-color: #8080806c;
+    border: 0px solid rgba(114, 106, 106, 0.521);
+    border-radius: 50px;
+    width: 30vw;
+    height: 4vh;
+}
+.btns button{
+    background-color: aqua;
+    border: 0px solid black;
+    padding: 8px 12px;
+    border-radius: 50px;
+    width: 10vw;
+}
+
+.user-profile-pic-big{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.user-profile-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.user-detail{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.5;
+}
+.user-detail p{
+    margin:0px;
+}
+.user-name-big{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.project-heading{
+    padding: 0px 20px;
+}
+.project-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+
+}
+.projects{
+    padding: 0px 20px;
+}
+.project-card{
+    border-left: 4px solid orange;
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px -3px black;
+    background-color: white;
+}
+main{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
+}
+.side-bar-right{
+    margin-right: 20px;
+}
+.announcements-block{
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.announcement{
+    border-bottom: 1px solid rgb(173, 173, 173);
+    background-color: white;
+    margin-bottom: 10px;
+}
+.trending-block{
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    flex-direction: column;
+    gap: 10px
+}
+.trending-item h4, .trending-item p{
+margin: 0px;
+}
+.trending-item{
+    gap: 10px;
+    align-items: center;
+}
